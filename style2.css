@@ -1,0 +1,136 @@
+.otsikko{
+    padding: 3px;
+    border-bottom: solid black;
+    background: lightblue;
+    text-align: center;
+    
+    color: black;
+    font-size: 30px;
+}
+
+.teksti{
+    text-align: center;
+    margin: 20px;
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+}
+
+.lista3{
+    
+    padding: 10px;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    background-color: rgb(82, 82, 82);
+
+    font-size: 24px;
+}
+
+.listat3{
+    
+    list-style-type: none;
+}
+
+body{
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 0;
+}
+
+.nav{
+    margin: auto;
+    
+    padding: 20px;
+    background: rgb(202, 202, 202);
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    
+    text-align: center;
+}
+
+.navi{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+   
+}
+
+.navitem{
+    display: inline;
+    margin: 25px;
+}
+
+.kiekko{
+    display: inline;
+    margin: 17px;
+}
+
+.sidebar {
+    float: left;
+    padding: 10px;
+    background: rgb(194, 194, 194);
+    
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    height: 1000px;
+    width: 10%;
+    
+}
+
+.linkit{
+    list-style-type: none;
+    color: black;
+    font-size: 20px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+
+}
+
+.linkkiotsikko{
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+}
+
+footer{
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-size: 16px;
+    background: rgb(51, 51, 51);
+    color: white;
+    text-align: center;
+    
+
+}
+
+
+a:link{
+    color: black;
+    text-decoration: none;
+}
+
+a:visited{
+    color: darkblue;
+    text-decoration: none;
+}
+
+a:hover{
+    color: red;
+    text-decoration: underline;
+}
+
+a:active{
+    color: rgb(125, 70, 226);
+    text-decoration: underline;
+}
