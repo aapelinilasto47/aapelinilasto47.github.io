@@ -1,0 +1,121 @@
+.teksti{
+    margin-top: 10px;
+    margin-bottom: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+body{
+    background-color: #141414;
+}
+
+.card{ 
+    background-color: rgb(39, 39, 41);
+    color: white;
+}
+
+.table{
+    background-color: rgb(31, 31, 32);
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+}
+
+.muted{
+    color: #c7c7c7;
+    text-align: end;
+    font-size: 12px;
+}
+
+.teksti2{
+    color: #ffffff;
+    text-align: center;
+    font-size: 22px;
+    
+    margin-bottom: 40px;
+}
+
+.header{
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    
+    margin-bottom: 40px;
+}
+
+.jumbotron{
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    font-size: 32px;
+    
+    margin-bottom: 10px;
+}
+
+.lead{
+    color: #ffffff;
+    text-align: center;
+    font-size: 28px;
+    list-style-type: none;
+    
+    margin-bottom: 40px;
+}
+
+.display-4{
+    color: #ffffff;
+    text-align: center;
+    font-size: 80px;
+    
+    margin-bottom: 40px;
+}
+
+.small{
+    color: #ffffff;
+    
+    font-size: 18px;
+    
+    
+}
+
+li{
+    color: #ffffff;
+    font-size: 18px;
+    
+}
+
+h1{
+    color: #ffffff;
+    font-size: 32px;
+    
+    margin-bottom: 40px;
+}
+
+ul{
+    background-color: rgb(36, 36, 36);
+    border-radius: 10px;
+    padding: 35px;
+
+}
+
+.teksti3{
+    color: #ffffff;
+    font-size: 20px;
+    
+    margin-top: 15px;
+    
+}
+
+.teksti4{
+    color: #ffffff;
+    font-size: 25px;
+    
+    list-style-type: none;
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: 'Helvetica Neue', sans-serif;
+
+    
+}
