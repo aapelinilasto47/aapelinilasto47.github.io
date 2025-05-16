@@ -1,0 +1,22 @@
+body, html {
+  background-color: #1b212a;
+  color: #e8e8e8;
+}
+
+tumma {
+  background-color: #353f4b;
+  color: #e8e8e8;
+}
+
+card {
+  background-color: #2d3a4c;
+  color: #e8e8e8;
+}
+
+.accordion-button::after {
+  filter: invert(1);
+}
+
+html, body {
+  overflow-x: hidden;
+}
