@@ -122,14 +122,16 @@
   text-align: center;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   transition: background-color 0.2s, transform 0.2s;
+  text-shadow: #1a1a1a 1px 1px 2px, #1a1a1a 0px 0px 1px;
   border-style: solid;
-  border-width: 3px;
+  border-width: 1.5px;
   flex: 1;
   min-width: 120px;
 
 }
 
 .nav-block:hover {
+  background-color: #262626;
   transform: translateY(-2px);
   transition: 0.2s;
 }
