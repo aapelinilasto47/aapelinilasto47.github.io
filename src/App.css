@@ -1,0 +1,244 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  
+}
+
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+.project-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+  margin: 1rem auto;
+  
+
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-card h2 {
+  margin-top: 0;
+  color: #b31aa6;
+}
+
+.work-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+  margin: 1rem auto;
+
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.work-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.work-card h2 {
+  margin-top: 0;
+  color: #da813c;
+}
+
+.jumbotron {
+  background-color: #179c08;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem auto 2rem auto;
+  text-align: center;
+  width: 100%;
+  min-height: min-content;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 3px;
+  border-color: #00c510;
+}
+
+.jumbotron h1 {
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+.me-card {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  width: 100%;
+  max-width: 600px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+  margin: 1rem auto;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  align-items: center;
+}
+
+.navigation-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 800px;
+  flex-wrap: wrap;
+}
+
+.nav-block {
+  background-color: #1a1a1a;
+  font-size: 0.7em;
+  border-radius: 10px;
+  padding: 1rem 1rem;
+  color: #ffffff;
+  font-weight: 500;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.2s, transform 0.2s;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+  flex: 1;
+  min-width: 120px;
+
+}
+
+.nav-block:hover {
+  background-color: #3d3d3d;
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+.home-section, .projects-section, .about-me-section, .contact-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.expand-button {
+  background-color: #1a1a1a;
+  padding: 0.5rem 1rem;
+  color: #1a1a1a;
+  font-family: inherit;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+
+.studies-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.study-card {
+  width: 100%;
+  max-width: 600px;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 1.5rem;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;  
+}
+
+.study-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.study-card:hover .expand-button {
+  color: #686868;
+  transition: color 0.2s;
+}
+
+.study-card h3 {
+  margin-top: 0;
+  color: #5686d8;
+  font-size: 1.5em;
+}
+
+.intro-studies {
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  color: #ffffff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #262626;
+  margin-bottom: 2rem;
+  width: 100%;
+  max-width: 400px;
+  justify-self: center;
+}
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background-color: #1a1a1a;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-style: solid;
+  border-width: 1px;
+  border-color: #00c510;
+}
+
+.contact-section a {
+  color: #ffffff;
+  transition: color 0.2s;
+}
+.contact-section a:hover {
+  color: #5a54ff;
+}
+
+@media (min-width: 768px) {
+  .jumbotron {
+    padding: 2rem;
+
+  }
+
+  .nav-block {
+    font-size: 1.2em;
+  }
+}
