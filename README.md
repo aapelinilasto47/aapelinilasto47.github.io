@@ -20,7 +20,7 @@ Tämä on moderni, React-pohjainen portfolio-sivusto, jonka tavoitteena on esite
 
 ## 📂 Projektin rakenne
 
-
+```bash
 ├── public/              # tarvittavat julkiset tiedostot
 ├── src/
 │   ├── assets/          # Kuvat yms.
@@ -29,7 +29,7 @@ Tämä on moderni, React-pohjainen portfolio-sivusto, jonka tavoitteena on esite
 │   ├── App.jsx          # Pääkomponentti ja reititys
 │   ├── index.css        # Globaalit tyylit ja CSS-muuttujat
 │   └── App.css          # Komponenttikohtaiset tyylit
-
+```
 
 ## 📈 Oppimistavoitteet
 
