@@ -9,8 +9,8 @@ class NavItem {
 }
 
 export const navItems = [
-  new NavItem(1, 'Projects', 'projects', '#ff0000', '#00ff00'),
-  new NavItem(2, 'Work', 'work', '#0000ff', '#ffff00'),
-  new NavItem(3, 'Contact', 'contact', '#00ffff', '#ff00ff'),
-  new NavItem(4, 'Courses', 'courses', '#ffffff', '#000000')
+  new NavItem(1, 'Projects', 'projects', '#c030a8', '#f7a2ff'),
+  new NavItem(2, 'Work', 'work', '#c77c26', '#ffc380'),
+  new NavItem(3, 'Contact', 'contact', '#2bbbb4', '#8afff9'),
+  new NavItem(4, 'Courses', 'courses', '#3128af', '#887bf5')
 ]
