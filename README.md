@@ -1,6 +1,6 @@
 # Aapeli Nilasto - Full-Stack Kehittäjän Portfolio
 
-✨ **[Tässä linkki julkaistuun sovellukseen](https://sinun-kayttajatunnus.github.io/reposi-nimi/)**
+✨ **[Tässä linkki julkaistuun sovellukseen](https://aapelinilasto47.github.io/)**
 
 Tämä on moderni, React-pohjainen portfolio-sivusto, jonka tavoitteena on esitellä ohjelmointiosaamistani, opintohistoriaani ja projektejani. Sivusto on rakennettu alusta alkaen korostaen responsiivisuutta, komponenttien uudelleenkäytettävyyttä ja selkeää käyttöliittymäsuunnittelua.
 
