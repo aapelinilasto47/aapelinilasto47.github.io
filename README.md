@@ -46,7 +46,7 @@ Clean Code: Koodin refaktorointi selkeisiin moduuleihin luettavuuden parantamise
 
 Jos haluat tutkia koodia paikallisesti:
 
-Kloonaa repositorio: git clone https://github.com/aapelinilasto47/
+Kloonaa repositorio: git clone https://github.com/aapelinilasto47/eka-react-projekti
 
 Asenna riippuvuudet: npm install
 
