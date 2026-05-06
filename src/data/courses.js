@@ -174,7 +174,7 @@ let courses = [
     "Pass",
     "2 ECTS",
     "An introductory course to the elements of artificial intelligence, covering basic concepts, applications, and ethical considerations of AI technology.",
-    2024,
+    2025,
     "University of Helsinki",
   ),
   new Course(
@@ -198,6 +198,33 @@ let courses = [
     "4",
     "5 ECTS",
     "A course that focuses on object-oriented programming principles using Python, including classes, inheritance, and polymorphism. The course includes practical exercises and projects to reinforce learning.",
+    2026,
+    "Laurea University of Applied Sciences",
+  ),
+
+  new Course(
+    "Software Design Process",
+    "5",
+    "5 ECTS",
+    "A course that explores the software design process, including requirements analysis, architectural design, and design patterns. The course emphasizes the importance of effective software design in creating maintainable and scalable applications.",
+    2026,
+    "Laurea University of Applied Sciences",
+  ),
+
+  new Course(
+    "Robotic Process Automation",
+    "5",
+    "5 ECTS",
+    "A course that introduces the concepts and applications of robotic process automation (RPA), including process automation, bot development, and implementation strategies. The course provides hands-on experience with Power Automate and Robocorp. During this course, we created a bot that automates my work tasks using Playwright and Robocorp, such as scheduling social media posts and navigating through different applications to complete tasks.",
+    2026,
+    "Laurea University of Applied Sciences",
+  ),
+
+  new Course(
+    "Introduction to Information Security",
+    "4",
+    "5 ECTS",
+    "A course that provides an introduction to information security principles and practices, including risk management, threat analysis, and security controls. The course emphasizes the importance of protecting information assets in the digital age. We completed many Capture the Flag (CTF) exercises during this course, which provided practical experience in identifying and mitigating security vulnerabilities.",
     2026,
     "Laurea University of Applied Sciences",
   ),
