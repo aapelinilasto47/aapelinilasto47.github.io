@@ -25,7 +25,7 @@ function StudyCard({ course }) {
             <b>Description:</b> {course.description}
           </p>
           <p>
-            <b>Year:</b> str({course.year})
+            <b>Year:</b> {course.year}
           </p>
           <p>
             <b>Place:</b> {course.place}

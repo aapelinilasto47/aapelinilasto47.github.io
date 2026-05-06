@@ -8,7 +8,7 @@ class Course {
     this.place = place;
   }
 }
-const courses = [
+let courses = [
   new Course(
     "Web Application Development with JavaScript",
     "4",
