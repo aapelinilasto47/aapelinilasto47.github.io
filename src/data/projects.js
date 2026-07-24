@@ -14,6 +14,7 @@ export const projects = [
     "A web application that allows users to predict the outcomes of tournaments, with user authentication, data storage in MongoDB Atlas, and automated fixture updates using Playwright.",
     "https://github.com/aapelinilasto47/mm-veikkaus",
   ),
+
   new Project(
     "Django Backend",
     "Django, REST API, PostgreSQL, Postman, Python",

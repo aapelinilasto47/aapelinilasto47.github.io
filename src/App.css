@@ -1,107 +1,78 @@
+:root {
+  --bg-dark: #0d0f14;
+  --card-bg: rgba(20, 24, 33, 0.85);
+  --border-color: rgba(255, 255, 255, 0.1);
+  --neon-green: #00ff88;
+  --neon-pink: #db62c7;
+  --neon-cyan: #00fff2;
+  --text-main: #f1f5f9;
+  --text-muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-dark);
+  color: var(--text-main);
+  /* Monospace-fontti antaa heti koodarimaisen ilmeen */
+  font-family: "Fira Code", "Consolas", "Courier New", monospace;
+
+  /* Tummennetaan kooditaustakuvaa peittokerroksella, jotta luettavuus paranee */
+  background-image:
+    linear-gradient(rgba(13, 15, 20, 0.88), rgba(13, 15, 20, 0.88)),
+    url("./assets/bg-code.jpg"); /* Vaihda tähän oman taustakuvasi polku assets-kansiosta */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 2rem 1rem;
   text-align: center;
-  
 }
 
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-
-.project-card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00c510;
-  margin: 1rem auto;
-  
-
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-card h2 {
-  margin-top: 0;
-  color: #b31aa6;
-}
-
-.work-card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00c510;
-  margin: 1rem auto;
-
-  text-align: left;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.work-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-}
-
-.work-card h2 {
-  margin-top: 0;
-  color: #da813c;
-}
+/* ==========================================================================
+   JUMBOTRON (HERO SECTION / TERMINAL)
+   ========================================================================== */
 
 .jumbotron {
-  background-color: #179c08;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 1rem auto 2rem auto;
+  background-color: rgba(15, 18, 26, 0.9);
+  border-radius: 8px;
+  padding: 2.5rem 2rem;
+  margin: 1rem auto 2.5rem auto;
   text-align: center;
   width: 100%;
-  min-height: min-content;
-  overflow-wrap: break-word;
-  word-wrap: break-word;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-style: solid;
-  border-width: 3px;
-  border-color: #00c510;
+  max-width: 800px;
+  box-sizing: border-box;
+
+  /* Miedompi vihreä hehku raskaan täytevärin sijaan */
+  border: 1px solid rgba(0, 255, 136, 0.3);
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.5),
+    0 0 20px rgba(0, 255, 136, 0.15);
+  backdrop-filter: blur(8px);
 }
 
 .jumbotron h1 {
-  font-size: clamp(2rem, 5vw, 4rem);
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  color: var(--neon-green);
+  text-shadow: 0 0 12px rgba(0, 255, 136, 0.4);
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.5px;
 }
 
-.me-card {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  width: 100%;
-  max-width: 600px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00c510;
-  margin: 1rem auto;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  align-items: center;
+.jumbotron p {
+  color: var(--text-muted);
+  font-size: 1.1rem;
+  margin: 0;
 }
+
+/* ==========================================================================
+   NAVIGATION MENU
+   ========================================================================== */
 
 .navigation-menu {
   display: flex;
@@ -110,103 +81,103 @@
   gap: 1rem;
   width: 100%;
   max-width: 800px;
+  margin: 0 auto 2rem auto;
   flex-wrap: wrap;
 }
 
 .nav-block {
-  background-color: #1a1a1a;
-  font-size: 0.7em;
-  border-radius: 10px;
-  padding: 1rem 1rem;
-  font-weight: 500;
+  background-color: rgba(20, 24, 33, 0.8);
+  font-size: 0.9em;
+  border-radius: 6px;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
   text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.2s, transform 0.2s;
-  text-shadow: #1a1a1a 1px 1px 2px, #1a1a1a 0px 0px 1px;
+  backdrop-filter: blur(6px);
+  cursor: pointer;
+
+  /* Tyyli perustuu navItems.js:stä tuleviin inline-väreihin, 
+     mutta CSS antaa sille yleiset raamit */
   border-style: solid;
   border-width: 1.5px;
   flex: 1;
   min-width: 120px;
-
+  transition: all 0.25s ease-in-out;
 }
 
 .nav-block:hover {
-  background-color: #262626;
-  transform: translateY(-2px);
-  transition: 0.2s;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
 }
 
-.home-section, .projects-section, .about-me-section, .contact-section {
+/* ==========================================================================
+   CARDS (PROJECT, WORK, STUDY, ME)
+   ========================================================================== */
+
+.project-card,
+.work-card,
+.study-card,
+.me-card {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.8rem;
   width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
+  max-width: 700px;
+  box-sizing: border-box;
+
+  /* Yhtenäinen, hienovarainen reuna */
+  border: 1px solid var(--border-color);
+  margin: 1.5rem auto;
+  text-align: left;
+  backdrop-filter: blur(8px);
+
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
 }
 
-.expand-button {
-  background-color: #1a1a1a;
-  padding: 0.5rem 1rem;
-  color: #1a1a1a;
-  font-family: inherit;
-  font-size: 1em;
-  border: none;
-  cursor: pointer;
-}
-
-
-.studies-section {
-  width: 100%;
-  max-width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  justify-content: center;
-  align-items: center;
-}
-
-.study-card {
-  width: 100%;
-  max-width: 600px;
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 1.5rem;
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00c510;
-  text-align: center;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;  
-}
-
+.project-card:hover,
+.work-card:hover,
 .study-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 242, 0.4);
+  box-shadow:
+    0 8px 25px rgba(0, 0, 0, 0.5),
+    0 0 15px rgba(0, 255, 242, 0.15);
 }
 
-.study-card:hover .expand-button {
-  color: #686868;
-  transition: color 0.2s;
+/* Otsikoiden neonavärit */
+.project-card h2 {
+  margin-top: 0;
+  color: var(--neon-pink);
+  text-shadow: 0 0 8px rgba(219, 98, 199, 0.3);
+}
+
+.work-card h2 {
+  margin-top: 0;
+  color: #e7a75d;
+  text-shadow: 0 0 8px rgba(231, 167, 93, 0.3);
 }
 
 .study-card h3 {
   margin-top: 0;
   color: #5686d8;
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
-.intro-studies {
-  background-color: #1a1a1a;
-  border-radius: 10px;
-  padding: 2rem;
-  color: #ffffff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #262626;
-  margin-bottom: 2rem;
+/* ==========================================================================
+   SECTIONS & UTILITIES
+   ========================================================================== */
+
+.home-section,
+.projects-section,
+.about-me-section,
+.studies-section,
+.contact-section {
   width: 100%;
-  max-width: 400px;
-  justify-self: center;
+  max-width: 800px;
+  margin: 0 auto;
 }
 
 .contact-section {
@@ -214,30 +185,47 @@
   flex-direction: column;
   align-items: center;
   gap: 1rem;
-  background-color: #1a1a1a;
-  border-radius: 10px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
   padding: 2rem;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-style: solid;
-  border-width: 1px;
-  border-color: #00c510;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact-section a {
-  color: #ffffff;
-  transition: color 0.2s;
+  color: var(--neon-cyan);
+  text-decoration: none;
+  font-weight: 500;
+  transition:
+    color 0.2s,
+    text-shadow 0.2s;
 }
+
 .contact-section a:hover {
-  color: #5a54ff;
+  color: #ffffff;
+  text-shadow: 0 0 8px var(--neon-cyan);
 }
 
+.expand-button {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 0.5rem 1rem;
+  color: var(--text-muted);
+  font-family: inherit;
+  font-size: 0.9em;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.expand-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+
+/* Responsive säädöt */
 @media (min-width: 768px) {
-  .jumbotron {
-    padding: 2rem;
-
-  }
-
   .nav-block {
-    font-size: 1.2em;
+    font-size: 1.05em;
   }
 }
