@@ -1,34 +1,56 @@
 import { useState } from "react";
 
-function StudyCard({ course }) {
+function StudyCard({ course, lang = "fi" }) {
   const [isExpanded, setIsExpanded] = useState(false);
+
+  // Jos kurssia ei ole määritelty, ei kaadeta sovellusta
+  if (!course) return null;
 
   const toggleExpand = () => {
     setIsExpanded(!isExpanded);
   };
 
+  // Turvallinen kielen valinta
+  const title =
+    typeof course?.title === "object"
+      ? course.title?.[lang] || course.title?.["fi"]
+      : course?.title;
+
+  const description =
+    typeof course?.description === "object"
+      ? course.description?.[lang] || course.description?.["fi"]
+      : course?.description;
+
   return (
     <div className="study-card">
-      <h3>{course.title}</h3>
+      <h3>{title}</h3>
       <button onClick={toggleExpand} className="expand-button">
-        {isExpanded ? "Hide Details" : "Show Details"}
+        {isExpanded
+          ? lang === "fi"
+            ? "Piilota tiedot"
+            : "Hide Details"
+          : lang === "fi"
+            ? "Näytä tiedot"
+            : "Show Details"}
       </button>
+
       {isExpanded && (
         <div className="study-details">
           <p>
-            <b>Grade:</b> {course.grade}
+            <b>{lang === "fi" ? "Arvosana:" : "Grade:"}</b> {course.grade}
           </p>
           <p>
-            <b>Study Points:</b> {course.studyPoints}
+            <b>{lang === "fi" ? "Opintopisteet:" : "Study Points:"}</b>{" "}
+            {course.studyPoints}
           </p>
           <p>
-            <b>Description:</b> {course.description}
+            <b>{lang === "fi" ? "Kuvaus:" : "Description:"}</b> {description}
           </p>
           <p>
-            <b>Year:</b> {course.year}
+            <b>{lang === "fi" ? "Vuosi:" : "Year:"}</b> {course.year}
           </p>
           <p>
-            <b>Place:</b> {course.place}
+            <b>{lang === "fi" ? "Paikka:" : "Place:"}</b> {course.place}
           </p>
         </div>
       )}

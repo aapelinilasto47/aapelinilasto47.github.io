@@ -9,8 +9,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  
-  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(./assets/tausta.png);
+
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -92,8 +92,6 @@ h1 {
     left: 2rem;
     padding: 1rem;
   }
-
-
 }
 
 .home-section {

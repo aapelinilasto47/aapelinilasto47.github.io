@@ -1,12 +1,24 @@
-import omaKuva from '../assets/mäpieni.jpg';
+import omaKuva from "../assets/mäpieni.jpg";
 
-function MeCard() {
+function MeCard({ lang = "fi" }) {
   return (
     <div className="me-card">
-      <img src={omaKuva} alt="Aapeli Nilasto" style={{ width: '80%', height: 'auto', borderRadius: '5px', marginTop: '1rem' }} />
+      <img
+        src={omaKuva}
+        alt="Aapeli Nilasto"
+        style={{
+          width: "80%",
+          height: "auto",
+          borderRadius: "5px",
+          marginTop: "1rem",
+        }}
+      />
       <h2>Aapeli Nilasto</h2>
-        <p>Full Stack Developer specializing in React, Django and databases. Passionate about building efficient and scalable web applications.</p>
-        
+      <p>
+        {lang === "fi"
+          ? "Full Stack -kehittäjä, joka on erikoistunut TypeScriptiin, Pythoniin ja laadunvarmistukseen (QA). Intohimona tehokkaiden, turvallisten ja skaalautuvien verkkosovelluste rakentaminen."
+          : "Full Stack Developer specializing in TypeScript, Python, and QA. Passionate about building efficient, safe, and scalable web applications."}
+      </p>
     </div>
   );
 }
