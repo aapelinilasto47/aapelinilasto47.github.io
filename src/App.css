@@ -16,6 +16,11 @@
   box-sizing: border-box;
 }
 
+html {
+  /* Varaa vierityspalkille tilaa aina, jotta leiska ei hyppää/vene kun sisältö pidentyy */
+  scrollbar-gutter: stable;
+}
+
 html,
 body {
   margin: 0;
@@ -50,8 +55,9 @@ h4,
 p,
 a,
 button,
-span {
-  overflow-wrap: break-word;
+span,
+li {
+  overflow-wrap: anywhere;
   word-wrap: break-word;
   word-break: break-word;
   hyphens: auto;
@@ -154,7 +160,8 @@ span {
 .project-card,
 .work-card,
 .study-card,
-.me-card {
+.me-card,
+.contact-section {
   background-color: var(--card-bg);
   border-radius: 8px;
   padding: 1.25rem;
@@ -166,6 +173,7 @@ span {
   text-align: left;
   backdrop-filter: blur(8px);
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  overflow: hidden; /* Estää sisällön leviämisen kortin ulkopuolelle */
   transition:
     transform 0.25s ease,
     border-color 0.25s ease,
@@ -174,7 +182,9 @@ span {
 
 .project-card:hover,
 .work-card:hover,
-.study-card:hover {
+.study-card:hover,
+.me-card:hover,
+.contact-section:hover {
   transform: translateY(-4px);
   border-color: rgba(0, 255, 242, 0.4);
   box-shadow:
@@ -189,7 +199,7 @@ span {
   text-shadow: 0 0 8px rgba(219, 98, 199, 0.3);
 }
 
-.work-card h2 {
+.work-card h3 {
   margin-top: 0;
   color: #e7a75d;
   text-shadow: 0 0 8px rgba(231, 167, 93, 0.3);
@@ -209,11 +219,20 @@ span {
 .projects-section,
 .about-me-section,
 .studies-section,
+.courses-section,
 .contact-section {
   width: 100%;
   max-width: 800px;
   margin: 0 auto;
   box-sizing: border-box;
+}
+
+.home-section {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .contact-section {
@@ -248,8 +267,7 @@ span {
   color: var(--text-muted);
   font-family: inherit;
   font-size: 0.9em;
-  border: 1px solid var(--border-color);
-  border-radius: 4px;
+  border: none;
   cursor: pointer;
   transition: all 0.2s;
 }
