@@ -10,7 +10,7 @@ class Project {
 export const projects = [
   new Project(
     "Tournament Prediction Web App",
-    "React.js, Tailwind CSS, Next.js API Routes, Next.js Server Actions, MongoDB Atlas, Google OAuth 2.0, Playwright, Github Actions, Vercel",
+    "Typescript, React.js, Tailwind CSS, Next.js API Routes, Next.js Server Actions, MongoDB Atlas, Google OAuth 2.0, Playwright, Github Actions, Vercel",
     "A web application that allows users to predict the outcomes of tournaments, with user authentication, data storage in MongoDB Atlas, and automated fixture updates using Playwright.",
     "https://github.com/aapelinilasto47/mm-veikkaus",
   ),
